@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'io.quarkus' version '3.28.5'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation enforcedPlatform("io.quarkus:quarkus-bom:3.28.5")
+    implementation 'io.quarkus:quarkus-rest'
+    implementation 'io.quarkus:quarkus-qute'
+    implementation 'io.quarkiverse.qute.web:quarkus-qute-web:3.4.4'    
+}
